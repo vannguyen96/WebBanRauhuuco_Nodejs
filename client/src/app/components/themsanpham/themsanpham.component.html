@@ -1,0 +1,274 @@
+<p>
+  danhsachloaisanpham works!
+</p>
+<!DOCTYPE html>
+<html class=" ">
+
+    <body class=" ">
+        <!-- START TOPBAR -->
+        <div class='page-topbar '>
+            <div class='logo-area'>
+            </div>
+            <div class='quick-area'>
+                <div class='pull-left'>
+                    <ul class="info-menu left-links list-inline list-unstyled">
+                        <li class="sidebar-toggle-wrap">
+                            <a href="javascript:;" data-toggle="sidebar" class="sidebar_toggle">
+                            <i class="fa fa-bars"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class='pull-right' id="profile-right">
+                    <ul class="info-menu right-links list-inline list-unstyled">
+                        <li class="profile">
+                            <a href="#" data-toggle="dropdown" class="toggle">
+                            <img src="assets/upload/vannguyen.jpg"  alt="user-image" class="img-circle img-inline avatar">
+                            <span class="name"> <i class="fa fa-angle-down"></i></span>
+                            </a>
+                            <ul class="dropdown-menu profile animated fadeIn">
+                                
+                               
+                                <li class="last">
+                                    <a href="/logout">
+                                    <i class="fa fa-lock"></i>
+                                    Logout
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="page-container row-fluid container-fluid">
+          <div class="page-sidebar pagescroll">
+            <!-- MAIN MENU - START -->
+            <div class="page-sidebar-wrapper" id="main-menu-wrapper">
+                <!-- USER INFO - START -->
+                <div class="profile-info row">
+                    <div class="profile-image col-xs-4">
+                        <a href="ui-profile.html">
+                        <img alt=""  src="assets/upload/vannguyen.jpg" class="img-responsive img-circle avatar">
+                        </a>
+                    </div>
+                    <div class="profile-details col-xs-8">
+                        <h3>
+                            <a href="ui-profile.html" class="name">Raubb</a>
+                            <!-- Available statuses: online, idle, busy, away and offline -->
+                            <span class="profile-status online"></span>
+                        </h3>
+                        <p class="profile-title">Web Bán Rau Hữu Cơ</p>
+                    </div>
+                </div>
+                <!-- USER INFO - END -->
+                <ul class='wraplist'>
+                    <li class='menusection'>Main</li>
+                    <li class="open"> 
+                        <a href="/">
+                        <i class="fa fa-dashboard"></i>
+                        <span class="title">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:;">
+                        <i class="fa fa-suitcase"></i>
+                        <span class="title">Quản Lí Loại Sản Phẩm</span>
+                        <span class="arrow "></span>
+                        </a>
+                        <ul class="sub-menu" >
+                          <!-- <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+                              <a routerLink="/danh-sach">Danh Sách</a></li> -->
+                      <li>
+                          <a class=""  href="/danh-sach"  >Danh Sách</a>
+                      </li>
+                      <li>
+                          <a class="" href="admin/cate/them-cate"  >Thêm</a>
+                      </li>
+                  </ul>
+                    </li>
+                    <li class="">
+                        <a href="javascript:;">
+                        <i class="fa fa-suitcase"></i>
+                        <span class="title">Quản Lí Sản Phẩm</span>
+                        <span class="arrow "></span>
+                        </a>
+                        <ul class="sub-menu" >
+                            <li>
+                                <a class=""  href="/danhsach-sanpham"  >Danh Sách</a>
+                            </li>          
+                            <li>
+                                <a class="" href="/admin-sanpham-them-sanpham"  >Thêm</a>
+                            </li>
+                        </ul>
+                    </li>
+        
+                    <li class="">
+                        <a href="javascript:;">
+                        <i class="fa fa-suitcase"></i>
+                        <span class="title"> Quản Lí Đơn Hàng</span>
+                        <span class="arrow "></span>
+                        </a>
+                        <ul class="sub-menu" >
+                            <li>
+                                <a class="" href="admin/cart/danh-sach"  >Danh Sách</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="javascript:;">
+                        <i class="fa fa-suitcase"></i>
+                        <span class="title">Quản Lí Khách Hàng</span>
+                        <span class="arrow "></span>
+                        </a>
+                        <ul class="sub-menu" >
+                            <li>
+                                <a class="" href="admin/danhsach-user"  >Danh Sách</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- MAIN MENU - END -->
+        </div>
+        <section id="main-content" class=" ">
+            <section class="wrapper main-wrapper row" style=''>
+                <div class='col-xs-12'>
+                    <div class="page-title">
+                        <div class="pull-left">
+                            <h1 class="title">Thêm Sản Phẩm</h1>
+                        </div>
+                        <div class="pull-right hidden-xs">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-xs-12">
+                    <section class="box ">
+                        <header class="panel_header">
+                            <h2 class="title pull-left">Thông Tin Sản Phẩm</h2>
+                            <div class="actions panel_actions pull-right">
+                                <a class="box_toggle fa fa-chevron-down"></a>
+                                <a class="box_setting fa fa-cog" data-toggle="modal" href="#section-settings"></a>
+                                <a class="box_close fa fa-times"></a>
+                            </div>
+                        </header>
+                        <div class="content-body">
+                            <div class="row">
+                                
+
+                                <div class="row show-hide-message" *ngIf="message">
+                                    <div [ngClass]="messageClass">
+                                        {{ message }}
+                                    </div>
+                                </div>
+                                      <form [formGroup]="form" (submit)="onThemspSubmit()">
+                                    <div class="col-xs-12 col-sm-9 col-md-8 padding-bottom-30">
+                                        <div class="form-group">
+                                            <label class="form-label" for="field-120334">Tên Sản Phẩm</label>
+                                            <span class="desc"></span>
+                                            <div  [ngClass]="{'has-error': (form.controls.name.errors && form.controls.name.dirty) ||
+                                            (!tenloaispValid && form.controls.name.dirty) ,
+                                            'has-success': !form.controls.name.errors && tenloaispValid }">
+                                                <input type="text" id="name"  formControlName="name" class="form-control" autocomplete="off"
+                                                placeholder="*Tên sản phẩm" name="name"
+                                                (blur)="checktensp()" />
+                                                <ul class="help-block">
+                                                      <li *ngIf="form.controls.name.errors?.required && form.controls.name.dirty">Không được để trống!</li>
+                                                      <li *ngIf="form.controls.name.errors?.minlength && form.controls.name.dirty || form.controls.name.errors?.maxlength && form.controls.name.dirty ">Số Kí Tự Tối Thiểu là: 3, Số Kí Tự Tối Đa là: 15</li>
+                                                      <li *ngIf="tenloaispMessage">{{ tenloaispMessage }}</li>
+                                                  </ul>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label" for="field-120334">Giá Tiền</label>
+                                            <span class="desc"></span>
+                                            <div  [ngClass]="{'has-error': (form.controls.gia.errors && form.controls.gia.dirty),
+
+                                            'has-success': !form.controls.gia.errors }">
+                                                <input type="Number" id="gia"  formControlName="gia" class="form-control" autocomplete="off"
+                                                placeholder="*Giá sản phẩm" name="gia"
+                                                />
+                                                <ul class="help-block">
+                                                      <li *ngIf="form.controls.gia.errors?.required && form.controls.gia.dirty">Không được để trống!</li>
+                                                      <li *ngIf="form.controls.gia.errors?.min && form.controls.gia.dirty  ">Giá phải lớn hơn 0 !</li>
+                                                      
+                                                  </ul>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label" for="field-120334">Đơn Vị Tính</label>
+                                            <span class="desc"></span>
+                                            <div [ngClass]="{'has-error': (form.controls.donvitinh.errors && form.controls.donvitinh.dirty) ,
+                                            'has-success': !form.controls.donvitinh.errors }">
+                                                <input type="text" id="donvitinh" formControlName="donvitinh" class="form-control"
+                                                placeholder="*Đơn vị tính"  name="donvitinh">
+                                                <ul class="help-block">
+                                                    <li *ngIf="form.controls.donvitinh.errors?.required && form.controls.donvitinh.dirty">Không được để trống!</li>
+                                                    <li *ngIf="form.controls.donvitinh.errors?.minlength && form.controls.donvitinh.dirty || form.controls.donvitinh.errors?.maxlength && form.controls.donvitinh.dirty ">Số Kí Tự Tối Thiểu là: 3, Số Kí Tự Tối Đa là: 15</li>
+                                                  </ul>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label" for="field-120334">Mô Tả Sản Phẩm</label>
+                                            <span class="desc"></span>
+                                            <div [ngClass]="{'has-error': (form.controls.mota.errors && form.controls.mota.dirty) ,
+                                            'has-success': !form.controls.mota.errors }">
+                                                
+                                                <textarea  class="form-control" rows="10" cols="60" id="mota" name="mota" formControlName="mota"
+                                                placeholder="*Mô tả sản phẩm"> </textarea>
+                                                <ul class="help-block">
+                                                    <li *ngIf="form.controls.mota.errors?.required && form.controls.mota.dirty">Không được để trống!</li>
+                                                    <li *ngIf="form.controls.mota.errors?.minlength && form.controls.mota.dirty || form.controls.mota.errors?.maxlength && form.controls.mota.dirty ">Số Kí Tự Tối Thiểu là: 10, Số Kí Tự Tối Đa là: 500</li>
+                                                  </ul>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label" for="field-120334">Loại Sản Phẩm</label>
+                                            <span class="desc"></span>
+                                            <div >
+                                                <select class="form-control" id="loaisp" name="loaisp" formControlName="loaisp">
+
+                                                    <option *ngFor="let ta of list" value="{{ ta.idloaisanpham }}">{{ ta.tenloaisanpham }}</option>
+                                                    
+                                                </select>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                              <label class="form-label" for="field-120334">Hình Ảnh</label>
+                                              <span class="desc"></span>
+                                              <div [ngClass]="{'has-error': (form.controls.hinhanh.errors && form.controls.hinhanh.dirty) ,
+                                              'has-success': !form.controls.hinhanh.errors }">
+                                                  <input type="text" id="hinhanh" formControlName="hinhanh" class="form-control"
+                                                  placeholder="*Link hình ảnh loại sản phẩm"  name="hinhanh">
+                                                  <ul class="help-block">
+                                                      <li *ngIf="form.controls.hinhanh.errors?.required && form.controls.hinhanh.dirty">Không được để trống!</li>
+                                                      <li *ngIf="form.controls.hinhanh.errors?.minlength && form.controls.hinhanh.dirty || form.controls.hinhanh.errors?.maxlength && form.controls.hinhanh.dirty ">Số Kí Tự Tối Thiểu là: 3, Số Kí Tự Tối Đa là: 15</li>
+                                                    </ul>
+                                              </div>
+                                          </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-9 col-md-8 padding-bottom-30">
+                                        <div class="text-left">
+                                            <button [disabled]="!form.valid || processing" type="submit" class="btn btn-primary">Save</button>
+                                            <button type="button" class="btn">Cancel</button>
+                                        </div>
+                                    </div>
+                                  </form>
+                                </div>
+                            </div>
+                    </section>
+                    </div>
+            </section>
+        </section>
+
+    <!--  SIDEBAR - END -->
+    <!-- START CONTENT -->
+    
+    <!-- END CONTENT -->
+    <div class="chatapi-windows ">
+
+    </div>
+        </div>
